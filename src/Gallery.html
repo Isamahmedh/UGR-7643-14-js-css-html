@@ -3,43 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SnapScape</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/images/headphone-icon_34408.ico" />
   </head>
   <body>
     <header class="header">
       <a href="#" class="logo"> SnapScape</a>
-
       <nav class="navigationbar">
         <a href="home.html">Home</a>
         <a href="About.html">About</a>
         <a href="My_Work.html">My Work</a>
-        <a href="Gallery.html">Gallery</a>
+        <a class="current" href="Gallery.html">Gallery</a>
         <a href="Contact.html">Contact</a>
       </nav>
     </header>
-    <section class="Gallery" id="Gallery">
-      <div class="Gallery-content">
-        <h1>Gallery</h1>
-        <div class="text-animation">
-          <h3>Here you go!!</h3>
-        </div>
-        <p>
-          Embark on a visual journey crafted by creators, seamlessly blending
-          photography and design into an immersive experience. Dive into a world
-          where every pixel tells a story, where originality meets artistry.
-          Explore the gallery curated by many creators, where moments are frozen
-          in time and design breathes life into each frame.
-        </p>
-        <img src="/images/nine.jpg" alt="creative work 8" />
-        <img src="/images/one.jpg" alt="creative work 1" />
-        <img src="/images/three.jpg" alt="creative work 2" />
-        <img src="/images/four.jpg" alt="creative work 3" />
-        <img src="/images/five.jpg" alt="creative work 4" />
-        <img src="/images/six.jpg" alt="creative work 5" />
-        <img src="/images/seven.jpg" alt="creative work 6" />
-        <img src="/images/eight.jpg" alt="creative work 7" />
-        <img src="/images/home3.jpg" alt="creative work 9" />
+    <div class="Gallery-content">
+      <h1 class="gallery_h1">Gallery</h1>
+      <h3 class="gallery_h3">Here you go!!</h3>
+    </div>
+    <p class="gallery_paragraph">
+      Embark on a visual journey crafted by creators, seamlessly blending
+      photography and design into an immersive experience. Dive into a world
+      where every pixel tells a story, where originality meets artistry. Explore
+      the gallery curated by many creators, where moments are frozen in time and
+      design breathes life into each frame.
+    </p>
+    <div class="gallery_images">
+      <div class="image-container">
+        <img
+          class="gallery_image1"
+          src="/images/three.jpg"
+          alt="creative work 8"
+        />
+        <button class="like-button" onclick="toggleLike('likeCount1')">
+          Like
+        </button>
+        <p id="likeCount1">0 Likes</p>
       </div>
-    </section>
+
+      <div class="image-container">
+        <img
+          class="gallery_image2"
+          src="/images/two.jpg"
+          alt="creative work 1"
+        />
+        <button class="like-button" onclick="toggleLike('likeCount2')">
+          Like
+        </button>
+        <p id="likeCount2">0 Likes</p>
+      </div>
+
+      <div class="image-container">
+        <img
+          class="gallery_image3"
+          src="/images/one.jpg"
+          alt="creative work 2"
+        />
+        <button class="like-button" onclick="toggleLike('likeCount3')">
+          Like
+        </button>
+        <p id="likeCount3">0 Likes</p>
+      </div>
+
+      <div class="image-container">
+        <img
+          class="gallery_image4"
+          src="/images/five.jpg"
+          alt="creative work 3"
+        />
+        <button class="like-button" onclick="toggleLike('likeCount4')">
+          Like
+        </button>
+        <p id="likeCount4">0 Likes</p>
+      </div>
+
+      <div class="image-container">
+        <img
+          class="gallery_image5"
+          src="/images/four.jpg"
+          alt="creative work 4"
+        />
+        <button class="like-button" onclick="toggleLike('likeCount5')">
+          Like
+        </button>
+        <p id="likeCount5">0 Likes</p>
+      </div>
+
+      <div class="image-container">
+        <img
+          class="gallery_image6"
+          src="/images/small.jpg"
+          alt="creative work 5"
+        />
+        <button class="like-button" onclick="toggleLike('likeCount6')">
+          Like
+        </button>
+        <p id="likeCount6">0 Likes</p>
+      </div>
+
+      <div class="image-container">
+        <img
+          class="gallery_image7"
+          src="/images/six.jpg"
+          alt="creative work 6"
+        />
+        <button class="like-button" onclick="toggleLike('likeCount7')">
+          Like
+        </button>
+        <p id="likeCount7">0 Likes</p>
+      </div>
+
+      <div class="image-container">
+        <img
+          class="gallery_image8"
+          src="/images/seven.jpg"
+          alt="creative work 7"
+        />
+        <button class="like-button" onclick="toggleLike('likeCount8')">
+          Like
+        </button>
+        <p id="likeCount8">0 Likes</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2023 SnapScape. All rights reserved.</p>
+    </footer>
+    <script src="javascript/index.js"></script>
   </body>
 </html>

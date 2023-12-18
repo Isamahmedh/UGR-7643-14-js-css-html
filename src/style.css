@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .footer {
+    border: none;
+    font-size: 150%;
+    font-weight: lighter;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    
+  }
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background: #081b29;
+    color: antiquewhite;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2%;
+    background: rgb(153, 205, 50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: start;
+    font-size: 2.5rem;
+    color: antiquewhite;
+    font-weight: 600;
+  }
+  
+  .navigationbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navigationbar a {
+    font-size: 1.7rem;
+    color: antiquewhite;
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navigationbar a:hover,
+  .navigationbar a:active {
+    transform: translateY(-5px);
+    color: #081b29;
+  }
+
+  .navigationbar a.current {
+    color: #081b29;
+  }
+
+  span {
+    font-family: Lucida Handwriting;
+    color: rgb(174, 224, 100);
+  }
+  
+  .footer {
+    background: #081b29;
+    padding: 1rem;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+.like-button {
+    font-family: cursive;
+    color: red;
+    background: wheat;
+    border: 2px solid #cfd9de;
+    border-radius: 60px;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.image-container p {
+  color: yellowgreen;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+@media screen and (max-width:425px){
+  .navigationbar {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    font-size: small;
+  }
+  .logo {
+    font-size: medium;
+    margin-left: -0.5rem;
+  }
+  .navigationbar a {
+    font-size: small;
+  }
+  .contact_info a {
+    display: flex;
+    justify-content: space-between;
+    border: solid;
+    width: 100%;
+    margin: 3%;
+  }
+
+}
+
+
+.home_content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .About-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.My_Work-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.Gallery-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contact_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.home_h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    font-family: Lucida Handwriting;
+  }
+
+  .home_image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .home_h3 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .home_class {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .about_h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2.5rem;
+    color: antiquewhite;
+}
+
+  .hi_there {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: Lucida Handwriting;
+}
+
+.hi_image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.about_p {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.8rem;
+}
+
+.about_image1,
+.about_image2 {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 2rem auto;
+    display: block;
+}
+
+.contact_h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 2.5rem;
+    color: antiquewhite;
+}
+
+.contact_h3 {
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.contact_info {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 5rem;
+    margin-top: 10%;
+}
+
+.contact_info img {
+    width: 50px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact_info img:hover {
+  transform: translateY(-25px);
+}
+
+.my_work_h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 2.5rem;
+    color: antiquewhite;
+}
+
+.my_collection {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.my_image,
+.my_image2,
+.my_image3 {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 2rem auto;
+    display: block;
+}
+
+.gallery_h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 2.5rem;
+    color: antiquewhite;
+}
+
+.gallery_h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: Lucida Handwriting;
+}
+
+.gallery_paragraph {
+    text-align: center;
+    margin: 2rem;
+    font-size: 1.8rem;
+}
+
+.gallery_images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.gallery_image1,
+.gallery_image2,
+.gallery_image3,
+.gallery_image4,
+.gallery_image5,
+.gallery_image6,
+.gallery_image7,
+.gallery_image8,
+.gallery_image9 {
+    width: 30%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 1rem;
+    display: block;
+}
+
+.contact_h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 2.5rem;
+    color: antiquewhite;
+}
+
+.contact_h3 {
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.contact_info {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 5rem;
+    margin-top: 10%;
+}
+
+.contact_info img {
+    width: 50px;
+    margin-right: 10px;
+}
